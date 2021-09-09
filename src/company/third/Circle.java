@@ -10,14 +10,14 @@ public class Circle extends Shape {
     }
 
     public Circle(double radius) {
-        this.m_color = "blue";
-        this.m_filled = false;
+        // this.m_color = "blue";
+        // this.m_filled = false;
+        super("blue", false);
         this.m_radius = radius;
     }
 
     public Circle(double radius, String color, boolean filled) {
-        m_radius = radius;
-        m_color = color;
+        super(color, filled);
         m_filled = filled;
     }
 

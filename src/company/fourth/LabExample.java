@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 public class LabExample extends JFrame {
     JTextField jta1 = new JTextField(10);
     JTextField jta2 = new JTextField(10);
+    JLabel jLab = new JLabel("Result: ");
 
     JButton button = new JButton("Add them up");
 
@@ -18,6 +19,7 @@ public class LabExample extends JFrame {
         super("Example");
         setLayout(new FlowLayout());
         setSize(250, 150);
+        add(jLab);
         add(new JLabel(("1st number")));
         add(jta1);
         add(new JLabel(("2st number")));
@@ -29,6 +31,7 @@ public class LabExample extends JFrame {
                 try {
                     double x1 = Double.parseDouble(jta1.getText().trim());
                     double x2 = Double.parseDouble(jta2.getText().trim());
+                    jLab.setText("Result: " + (x1 + x2));
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, "Error in Number !",
                             "alert", JOptionPane.ERROR_MESSAGE

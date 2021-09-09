@@ -11,6 +11,7 @@ public class MovableCircle  implements Movable {
         m_center = new MovablePoint(x,y,xSpeed,ySpeed);
     }
 
+
     public void moveUp()
     {
         m_center.moveUp();
