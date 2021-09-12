@@ -38,16 +38,12 @@ public class MilanMadrid extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 milanScr++;
                 last_scorer = milan;
-                if(milanScr > madridScr)
-                {
+                if (milanScr > madridScr) {
                     lastWinner = milan;
-                }
-                else {
+                } else {
                     if (milanScr < madridScr) {
                         lastWinner = madrid;
-                    }
-                    else
-                    {
+                    } else {
                         lastWinner = "DRAW";
                     }
                 }
@@ -62,16 +58,12 @@ public class MilanMadrid extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 madridScr++;
                 last_scorer = madrid;
-                if(milanScr > madridScr)
-                {
+                if (milanScr > madridScr) {
                     lastWinner = milan;
-                }
-                else {
+                } else {
                     if (milanScr < madridScr) {
                         lastWinner = madrid;
-                    }
-                    else
-                    {
+                    } else {
                         lastWinner = "DRAW";
                     }
                 }

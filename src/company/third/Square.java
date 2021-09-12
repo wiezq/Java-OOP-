@@ -2,7 +2,7 @@ package third;
 
 public class Square extends Rectangle {
     public Square() {
-        super(1,1,"blue", false);
+        super(1, 1, "blue", false);
         // this.m_length = 1;
         // this.m_width = 1;
         // this.m_color = "blue";
@@ -10,7 +10,7 @@ public class Square extends Rectangle {
     }
 
     public Square(double side) {
-        super(side,side,"blue", false);
+        super(side, side, "blue", false);
         // this.m_length = side;
         // this.m_width = side;
         // this.m_color = "blue";
@@ -33,17 +33,19 @@ public class Square extends Rectangle {
         this.m_length = side;
         this.m_width = side;
     }
+
     @Override
     public void setWidth(double side) {
         this.m_width = side;
     }
+
     @Override
     public void setLength(double side) {
         this.m_length = side;
     }
+
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "Shape: Square\nColor: " + m_color + "\nSide: " + m_width;
     }
 }

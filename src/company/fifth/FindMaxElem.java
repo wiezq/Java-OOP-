@@ -4,19 +4,17 @@ import java.util.Scanner;
 
 public class FindMaxElem {
 
-    public static int recursion()
-    {
+    public static int recursion() {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
 
-        if (n == 0)
-        {
+        if (n == 0) {
             return 0;
-        }
-        else{
+        } else {
             return Math.max(n, recursion());
         }
     }
+
     public static void main(String[] args) {
         System.out.println(recursion());
     }

@@ -12,7 +12,7 @@ public class TestShapes {
 
         System.out.println();
 
-        Circle c1 = (Circle)s1; // Downcast back to Circle
+        Circle c1 = (Circle) s1; // Downcast back to Circle
         System.out.println(c1);
         System.out.println(c1.getArea());
         System.out.println(c1.getPerimeter());
@@ -35,7 +35,7 @@ public class TestShapes {
         System.out.println();
 
 
-        Rectangle r1 = (Rectangle)s3; // downcast
+        Rectangle r1 = (Rectangle) s3; // downcast
         System.out.println(r1);
         System.out.println(r1.getArea());
         System.out.println(r1.getColor());
@@ -51,7 +51,7 @@ public class TestShapes {
 
         System.out.println();
 
-        Rectangle r2 = (Rectangle)s4;
+        Rectangle r2 = (Rectangle) s4;
         System.out.println(r2);
         System.out.println(r2.getArea());
         System.out.println(r2.getColor());
@@ -60,7 +60,7 @@ public class TestShapes {
 
         System.out.println();
 
-        Square sq1 = (Square)r2;
+        Square sq1 = (Square) r2;
         System.out.println(sq1);
         System.out.println(sq1.getArea());
         System.out.println(sq1.getColor());

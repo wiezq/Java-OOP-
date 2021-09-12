@@ -1,13 +1,12 @@
 package third;
 
-public class MovablePoint implements Movable{
+public class MovablePoint implements Movable {
     int m_x;
     int m_y;
     int m_xSpeed;
     int m_ySpeed;
 
-    public MovablePoint(int x, int y, int xSpeed, int ySpeed)
-    {
+    public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
         this.m_x = x;
         this.m_y = y;
         this.m_xSpeed = xSpeed;
@@ -15,29 +14,27 @@ public class MovablePoint implements Movable{
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "Movable point\nx: " + this.m_x + " xSpeed: " + this.m_xSpeed + "\ny: " + this.m_y + " ySpeed: " + this.m_ySpeed;
     }
 
     @Override
-    public void moveUp()
-    {
+    public void moveUp() {
         this.m_y += this.m_ySpeed;
     }
+
     @Override
-    public void moveDown()
-    {
+    public void moveDown() {
         this.m_y -= this.m_ySpeed;
     }
+
     @Override
-    public void moveLeft()
-    {
+    public void moveLeft() {
         this.m_x -= this.m_xSpeed;
     }
+
     @Override
-    public void moveRight()
-    {
+    public void moveRight() {
         this.m_x += this.m_xSpeed;
     }
 }

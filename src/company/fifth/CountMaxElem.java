@@ -20,8 +20,9 @@ public class CountMaxElem {
             System.out.println(count);
         }
     }
+
     public static void main(String[] args) {
         recursion(0, 0);
     }
-    
+
 }

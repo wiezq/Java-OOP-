@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class CountUnits {
 
-    public static int recursion()
-    {
+    public static int recursion() {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         // Базовый случай 
@@ -36,6 +35,7 @@ public class CountUnits {
             }
         }
     }
+
     public static void main(String[] args) {
         System.out.println(recursion());
     }

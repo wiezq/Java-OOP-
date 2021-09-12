@@ -5,19 +5,16 @@ import java.util.Scanner;
 
 public class OutPutNotEven {
 
-    public static void recursion13(int count)
-    {
+    public static void recursion13(int count) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        if (count % 2 != 0)
-        {
+        if (count % 2 != 0) {
             System.out.println("Not even " + n);
         }
         recursion13(++count);
     }
 
-    public static void recursion12()
-    {
+    public static void recursion12() {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         // Базовый случай
@@ -31,6 +28,7 @@ public class OutPutNotEven {
             }
         }
     }
+
     public static void main(String[] args) {
         // recursion13(1);
         recursion12();
