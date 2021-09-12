@@ -6,7 +6,8 @@ public class third {
     }
 }
 
-abstract class Dish
-{
 
-}
+
+
+
+
