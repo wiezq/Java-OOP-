@@ -8,24 +8,18 @@ public class Rectangle extends Shape {
         super("blue", false);
         this.m_width = 1;
         this.m_length = 1;
-        // this.m_color = "blue";
-        // this.m_filled = false;
     }
 
     public Rectangle(double width, double length) {
         super("blue", false);
         this.m_width = width;
         this.m_length = length;
-        // this.m_color = "blue";
-        // this.m_filled = false;
     }
 
     public Rectangle(double width, double length, String color, boolean filled) {
         super("blue", false);
         this.m_width = width;
         this.m_length = length;
-        // this.m_color = color;
-        // this.m_filled = filled;
     }
 
     public double getWidth() {

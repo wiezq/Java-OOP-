@@ -10,8 +10,6 @@ public class Circle extends Shape {
     }
 
     public Circle(double radius) {
-        // this.m_color = "blue";
-        // this.m_filled = false;
         super("blue", false);
         this.m_radius = radius;
     }
@@ -19,6 +17,7 @@ public class Circle extends Shape {
     public Circle(double radius, String color, boolean filled) {
         super(color, filled);
         m_filled = filled;
+        m_radius = radius;
     }
 
     public double getRadius() {

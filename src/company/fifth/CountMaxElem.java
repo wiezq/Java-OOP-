@@ -2,6 +2,7 @@ package fifth;
 
 public class CountMaxElem {
     public static void recursion(int max, int count) {
+        System.out.print("Введите число: ");
         java.util.Scanner in = new java.util.Scanner(System.in);
         int n = in.nextInt();
         // Базовый случай 
@@ -17,7 +18,7 @@ public class CountMaxElem {
                 recursion(max, count);
             }
         } else {
-            System.out.println(count);
+            System.out.println("Количество максимальных элементов: " + count);
         }
     }
 

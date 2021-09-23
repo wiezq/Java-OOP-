@@ -93,11 +93,11 @@ public class TestStudent {
         System.out.println("After sorting selectionSorting : ");
         printArray(students);
 
-        System.out.println("Before qSort : "); // Быстрая сортировка по GPA с использованием компаратора SortingStudentsByGPA
-        printArray(students);
-        qsort(students, 0, students.length - 1, new SortingStudentsByGPA());
-        System.out.println("After sorting qsortSorting : ");
-        printArray(students);
+//        System.out.println("Before qSort : "); // Быстрая сортировка по GPA с использованием компаратора SortingStudentsByGPA
+//        printArray(students);
+//        qsort(students, 0, students.length - 1, new SortingStudentsByGPA());
+//        System.out.println("After sorting qsortSorting : ");
+//        printArray(students);
 
         Student[] students2 = new Student[4];
         students2[0] = new Student("Alesha2", "2IKBO-02-20", 3, 10, 1);

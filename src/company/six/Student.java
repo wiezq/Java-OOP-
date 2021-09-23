@@ -25,6 +25,22 @@ public class Student implements Comparable<Student> {
         return this.m_GPA;
     }
 
+    public String getM_group() {
+        return m_group;
+    }
+
+    public void setM_group(String m_group) {
+        this.m_group = m_group;
+    }
+
+    public int getM_course() {
+        return m_course;
+    }
+
+    public void setM_course(int m_course) {
+        this.m_course = m_course;
+    }
+
     @Override
     public int compareTo(Student otherStudent) {
 
@@ -40,7 +56,7 @@ public class Student implements Comparable<Student> {
 
     @Override
     public String toString() {
-        return "Name :" + this.m_name + " Id :" + this.m_id + " GPA: " + this.getGPA();
+        return "Name: " + this.m_name + " Id: " + this.m_id + " GPA: " + this.getGPA();
     }
 
 

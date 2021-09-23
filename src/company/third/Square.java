@@ -3,26 +3,14 @@ package third;
 public class Square extends Rectangle {
     public Square() {
         super(1, 1, "blue", false);
-        // this.m_length = 1;
-        // this.m_width = 1;
-        // this.m_color = "blue";
-        // this.m_filled = false;
     }
 
     public Square(double side) {
         super(side, side, "blue", false);
-        // this.m_length = side;
-        // this.m_width = side;
-        // this.m_color = "blue";
-        // this.m_filled = false;
     }
 
     public Square(double side, String color, boolean filled) {
         super(side, side, color, filled);
-        // this.m_length = side;
-        // this.m_width = side;
-        // this.m_color = color;
-        // this.m_filled = filled;
     }
 
     public double getSide() {

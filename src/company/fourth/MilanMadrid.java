@@ -6,18 +6,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MilanMadrid extends JFrame {
-    JPanel[] pnl = new JPanel[9];
+    JPanel[] pnl = new JPanel[9]; // Панель с 9 ячейками
     String milan = "AC MILAN";
     String madrid = "Real Madrid";
-    JButton mButton = new JButton(milan);
-    JButton rButton = new JButton(madrid);
-    int milanScr = 0;
-    int madridScr = 0;
-    JLabel resLabel = new JLabel("Result: " + milanScr + " X " + madridScr);
+    JButton mButton = new JButton(milan); // Кнопка команды AC MILAN
+    JButton rButton = new JButton(madrid); // Кнопка команды Real Madrid
+    int milanScr = 0; // Переменная счета команды милан
+    int madridScr = 0; // Переменная счета коаманды Readl Madrid
+    JLabel resLabel = new JLabel("Result: " + milanScr + " X " + madridScr); // Табло с результатом матча
     String last_scorer = "N/A";
-    JLabel lstLabel = new JLabel("Last scorer: " + last_scorer);
+    JLabel lstLabel = new JLabel("Last scorer: " + last_scorer); // Табло с последней забившей команды
     String lastWinner = "DRAW";
-    Label winLabel = new Label("Winner: " + lastWinner);
+    Label winLabel = new Label("Winner: " + lastWinner); // Табло с победителем в данный момент
 
     public MilanMadrid() {
         super("Милан и Мадрид");
@@ -72,8 +72,6 @@ public class MilanMadrid extends JFrame {
                 winLabel.setText("Winner: " + lastWinner);
             }
         });
-
-
     }
 
     public static void main(String[] args) {
