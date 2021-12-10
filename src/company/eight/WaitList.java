@@ -13,14 +13,13 @@ public class WaitList<E> implements IWaitList<E> {
     }
 
     public WaitList(Collection<E> c) {
-        content = new ConcurrentLinkedQueue<>();
-        content.addAll(c);
+        content = new ConcurrentLinkedQueue<>(c);
     }
 
 
     @Override
     public void add(E element) {
-        content.offer(element);
+        content.add(element);
     }
 
     @Override
