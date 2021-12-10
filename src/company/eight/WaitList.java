@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class WaitList<E> implements IWaitList<E> {
-    protected Queue<E> content;
+    protected ConcurrentLinkedQueue<E> content;
 
 
     public WaitList() {
@@ -24,6 +24,7 @@ public class WaitList<E> implements IWaitList<E> {
 
     @Override
     public E remove() {
+        if (isEmpty()) return null;
         return content.poll();
     }
 

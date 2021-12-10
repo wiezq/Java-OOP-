@@ -1,10 +1,17 @@
 package eight;
 
+import java.util.Collection;
+
 public class BoundedWaitList<E> extends WaitList<E>{
     private int capacity;
     public BoundedWaitList(int capacity){
         super();
         this.capacity = capacity;
+    }
+
+    public BoundedWaitList(Collection<E> col){
+        super(col);
+        this.capacity = col.size();
     }
 
     public int getCapacity() {

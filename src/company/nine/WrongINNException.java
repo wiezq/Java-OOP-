@@ -1,8 +1,16 @@
 package nine;
 
+import java.math.BigInteger;
+
 public class WrongINNException extends Exception{
-    public WrongINNException(String errorMessage)
-    {
-        super(errorMessage);
+    private BigInteger innNum;
+
+    public WrongINNException(BigInteger inn){
+        super("Номер ИНН: "+ inn + " не действителен!");
+        innNum = inn;
+    }
+
+    public BigInteger getInnNum() {
+        return innNum;
     }
 }

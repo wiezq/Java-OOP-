@@ -23,6 +23,5 @@ public class Test {
         Uwl.moveToBack("Aboba 3");
 
         System.out.println(Uwl);
-
     }
 }
